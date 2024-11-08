@@ -1,0 +1,337 @@
+/* Base Styles */
+.navbar {
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: #1B1B1B;
+    color: white;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+    z-index: 50;
+}
+
+.navbar-open {
+    transform: translateX(0); /* Slide in when open */
+}
+
+/* Navbar Sections */
+.navbar_section-1, .navbar_section-2, .navbar_section-3, .navbar_section-4 {
+    padding: 5% 10%;
+    position: relative;
+}
+
+.navbar_section-1::after, .navbar_section-2::after, .navbar_section-3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.navbar_section-1 {
+    height: 10%;
+}
+
+.navbar_section-2 {
+    height: 30%;
+}
+
+.navbar_section-3 {
+    height: 50%;
+}
+
+.navbar_section-4 {
+    height: 10%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    transition: all 0.20s ease-in-out;
+}
+
+.link:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* Navbar Containers */
+.navbar_section-1_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.title-text {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.navbar_section-2_container, .navbar_section-3_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_section-4_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Social Icon */
+.social-icon {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.20s ease-in-out;
+}
+
+.social-icon:hover {
+    color: rgba(128, 128, 128, 0.5);
+}
+
+/* Navbar Toggle Button for All Devices */
+.navbar-toggle {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger-icon {
+    font-size: 2rem;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.hamburger-icon.scrolled {
+    color: black;
+}
+
+.hamburger-icon.open {
+    color: white; /* Turns white when the menu is open */
+}
+
+/* Adjustments for Screen Widths */
+@media screen and (max-width: 1900px) {
+    .navbar {
+        width: 40vw;
+    }
+
+    .title-text, .link, .social-icon {
+        font-size: 2rem;
+    }
+
+    .navbar_section-1, .navbar_section-2, .navbar_section-3, .navbar_section-4 {
+        width: 100%;
+    }
+
+    .navbar_section-1 {
+        height: 15%;
+    }
+    .navbar_section-2 {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .navbar {
+        width: 40vw;
+    }
+
+    .title-text, .link, .social-icon {
+        font-size: 2rem;
+    }
+
+    .navbar_section-1, .navbar_section-2, .navbar_section-3, .navbar_section-4 {
+        width: 100%;
+    }
+
+    .navbar_section-1 {
+        height: 15%;
+    }
+    .navbar_section-2 {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        width: 50vw;
+    }
+    .title-text, .link, .social-icon {
+        font-size: 2rem;
+    }
+
+    .navbar_section-1, .navbar_section-2, .navbar_section-3, .navbar_section-4 {
+        width: 100%;
+    }
+
+    .navbar_section-1 {
+        height: 15%;
+    }
+    .navbar_section-2 {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbar {
+        width: 100vw;
+    }
+    .link {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    .title-text {
+        font-size: 1.75rem;
+    }
+    .social-icon {
+        font-size: 2rem;
+    }
+    .navbar_section-1, .navbar_section-2, .navbar_section-3, .navbar_section-4 {
+        width: 100%;
+    }
+    .navbar_section-1 {
+        height: 10%;
+    }
+    .navbar_section-2 {
+        height: 30%;
+    }
+}
+
+/* Adjustments for Screen Heights */
+@media screen and (max-height: 900px) {
+    .navbar_section-1 {
+        height: 15%;
+    }
+    .navbar_section-2 {
+        height: 35%;
+    }
+    .navbar_section-3 {
+        height: 35%;
+    }
+    .navbar_section-4 {
+        height: 15%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .navbar_section-1 {
+        height: 15%;
+    }
+    .navbar_section-2 {
+        height: 35%;
+    }
+    .navbar_section-3 {
+        height: 35%;
+    }
+    .navbar_section-4 {
+        height: 15%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .navbar_section-1 {
+        height: 15%;
+    }
+    .navbar_section-2 {
+        height: 45%;
+    }
+    .navbar_section-3 {
+        height: 35%;
+    }
+    .navbar_section-4 {
+        height: 5%;
+    }
+    .title-text, .link, .social-icon {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-height: 500px) {
+    .navbar_section-1 {
+        height: 15%;
+    }
+    .navbar_section-2 {
+        height: 45%;
+    }
+    .navbar_section-3 {
+        height: 35%;
+    }
+    .navbar_section-4 {
+        height: 5%;
+    }
+    .title-text, .link, .social-icon {
+        font-size: 1rem;
+    }
+    .hamburger-icon {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-height: 385px) {
+    .navbar_section-1 {
+        height: 20%;
+    }
+    .navbar_section-2 {
+        height: 60%;
+    }
+    .navbar_section-3 {
+        display: none;
+    }
+    .navbar_section-4 {
+        height: 10%;
+    }
+    .title-text, .link, .social-icon {
+        font-size: 0.75rem;
+    }
+    .hamburger-icon {
+        font-size: 1.75rem;
+    }
+    
+
+}
+
+@media screen and (max-height: 250px) {
+    .navbar_section-1 {
+        height: 30%;
+    }
+    .navbar_section-2 {
+        height: 70%;
+    }
+    .navbar_section-3 {
+        display: none;
+    }
+    .navbar_section-4 {
+        display: none;
+    }
+    .title-text, .link, .social-icon {
+        font-size: 1rem;
+    }
+    .hamburger-icon {
+        font-size: 1.5rem;
+    }
+
+}

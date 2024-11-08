@@ -1,0 +1,61 @@
+.page-1 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent
+}
+
+/* Spline background adjustment */
+.spline-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+}
+
+.home-landing_top_right {
+    position: absolute;
+    top: 3rem; 
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    z-index: 10; 
+}
+
+.home-landing_greet-large {
+    font-size: clamp(3rem, 2.259rem + 3.951vw, 7rem);
+    position: relative;
+}
+
+.home-landing_greet-small {
+    font-size: clamp(1rem, 0.815rem + 0.988vw, 2rem);
+    position: absolute;
+    top: -30px;
+    font-weight: normal;
+}
+
+.home-landing_small-intro {
+    font-size: clamp(1rem, 0.815rem + 0.988vw, 2rem);
+    margin-top: 0.5rem;
+    max-width: 55%;
+}
+
+.home-landing_small-intro-role {
+    background: linear-gradient(90deg, rgba(118,9,121,1) 26%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1000px){
+    .home-landing_small-intro {
+        max-width: 20rem;
+    }
+}
+

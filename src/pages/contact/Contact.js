@@ -43,11 +43,6 @@ const Contact = () => {
       <Navbar />
       <TitleBar10 title="Contact" backgroundColor="black" color="white" />
 
-      {/* Background Video */}
-      <video autoPlay loop muted className='background-video'>
-        <source src={earthSpinning} type="video/mp4" />
-      </video>
-
       <div className='contact-content'>
         <form className='contact-form' onSubmit={onSubmit}>
           <div className='form-group'>

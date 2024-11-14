@@ -84,7 +84,7 @@ const Navbar = () => {
 
         <div className='navbar_section-3'>
           <div className='navbar_section-3_container'>
-            <a href='/test.txt' className='link' download>Resume/CV</a>
+            <a href='/Resume_Ahmed.pdf' className='link' download>Resume/CV</a>
           </div>
         </div>
 

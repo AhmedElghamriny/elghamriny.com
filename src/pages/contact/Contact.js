@@ -4,8 +4,6 @@ import './Contact.css';
 
 import { Navbar, TitleBar10 } from '../../components';
 
-import { earthSpinning } from '../../assets';
-
 const Contact = () => {
   const [showMessage, setShowMessage] = useState(false); // State to control success message popup
 

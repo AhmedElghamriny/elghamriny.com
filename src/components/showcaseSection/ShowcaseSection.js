@@ -9,8 +9,15 @@ const ShowcaseSection = (props) => {
       <div className='showcase_section_container'>
         <TitleBar5 title={props.title} style={{ backgroundColor: props.backgroundColor }} />
         <div className='card-container'>
-          {Array.from({ length: props.numCards }).map((_, index) => (
-            <Card key={index} width={props.width} height={props.height} />
+        {props.cardData.map((card, index) => (
+          <Card 
+            key={index} 
+            width={props.width} 
+            height={props.height} 
+            title={card.title} 
+            image={card.image} 
+            link={card.link}
+          />
           ))}
         </div>
       </div>

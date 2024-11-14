@@ -1,3 +1,6 @@
 export {default as aboutImage} from './images/man_learning.jpg'
 export {default as jacksonPollockPainting} from './images/jackson_pollock.png'
-export {default as earthSpinning} from './videos/earth_spinning.mp4'
+export {default as spamEmail} from './images/cardImages/spamEmail.jpeg'
+export {default as turingMachine} from './images/cardImages/turingMachine.jpeg'
+export {default as neuralNetwork} from './images/cardImages/neuralNetwork.jpeg'
+export {default as taxiQlearning} from './images/cardImages/taxiQlearning.png'

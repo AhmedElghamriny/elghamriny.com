@@ -18,7 +18,7 @@ const Home = () => {
         <div className='home-landing_top_right'>
           <p className='home-landing_greet-small'>/mar.ha.ba/</p>
           <p className='home-landing_greet-large'>Hello, مرحبا</p>
-          <p className='home-landing_small-intro'>My name is Ahmed and I am a <span className='home-landing_small-intro-role'>Full Stack Web Developer</span></p>
+          <p className='home-landing_small-intro'>My name is Ahmed and I am an <span className='home-landing_small-intro-role'>AI & ML Engineer</span></p>
         </div>
       </div>
     </div>

@@ -84,7 +84,7 @@ const Navbar = () => {
 
         <div className='navbar_section-3'>
           <div className='navbar_section-3_container'>
-            <a href='/resum.pdf' className='link' download target="_blank" rel="noopener noreferrer">Resume/CV</a>
+            <a href='/resume.pdf' className='link' download target="_blank" rel="noopener noreferrer">Resume/CV</a>
           </div>
         </div>
 

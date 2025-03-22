@@ -28,9 +28,13 @@
 .about_section-1_image > img {
     max-width: 450px;
     max-height: 450px;
-    border-radius: 3rem;
-    border: 0.25rem solid rgba(0,0,0,1); /* fixed rgba color */
-}
+  
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+    transform: perspective(800px) rotateY(-5deg) rotateX(5deg);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+    animation: floatSpin 4s ease-in-out infinite;
+  }
 
 .about_section-1_text {
     display: flex;
@@ -66,6 +70,25 @@ ul > li {
 .painting_sentence-2 {
     font-weight: 500;
     font-style: italic;
+}
+
+/* Hover animation effect for image */
+@keyframes floatSpin {
+    0% {
+      transform: perspective(800px) translateY(0px) rotateY(-5deg) rotateX(5deg);
+    }
+    25% {
+      transform: perspective(800px) translateY(-5px) rotateY(-7deg) rotateX(6deg);
+    }
+    50% {
+      transform: perspective(800px) translateY(0px) rotateY(-5deg) rotateX(5deg);
+    }
+    75% {
+      transform: perspective(800px) translateY(5px) rotateY(-3deg) rotateX(4deg);
+    }
+    100% {
+      transform: perspective(800px) translateY(0px) rotateY(-5deg) rotateX(5deg);
+    }
 }
 
 /* Responsive padding for smaller screens */

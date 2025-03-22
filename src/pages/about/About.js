@@ -19,17 +19,18 @@ const About = () => {
           <div className='about_section-1_text'>
             <div className='about_main-text_section-1'>
               <h2>Who am I?</h2><br></br>
-              <p>I'm a Computer Science graduate from Dalhousie University with a passion for machine learning. I am driven by a deep curiosity about how data and mathematics shape our world and a desire to harness data to build intelligent, transformative systems. I find alot of excitement in developing models that can learn, adapt, and make predictions (as we humans do) with the challenge of solving complex problems through algorithms and insights.</p>
+              <p>I'm a Computer Science graduate from Dalhousie University with a passion for machine learning. I am driven by a deep curiosity about how data and mathematics shape our world and a desire to harness data to build intelligent, transformative systems. I find alot of excitement in developing models that can learn, adapt, and make predictions with the challenge of solving complex problems through algorithms and insights.</p>
             </div>
             <div className='about_main-text_section-2'>
               <h2>Skills and Technologies</h2><br></br>
               <ul>
-                <li><b>Programming Languages:</b> Python, Java, C++, C, SQL, HTML, CSS, JavaScript, PHP</li>
-                <li><b>Front-end:</b></li>
-                <li><b>Back-end:</b></li>
-                <li><b>ML Frameworks:</b> PyTorch, Tensorflow, scikit-learn</li>
-                <li><b>Visualization Tools: </b>Matplotlib, Seaborn, Power BI, Excel</li>
-                <li><b>Other Frameworks and Tools:</b> React.js, Node.js, Flask, SQL Workbench, VSCode</li>
+                <li><b>Programming Languages:</b> Python, Java, C++, C, C#, SQL, HTML, CSS, JavaScript, DAX, M</li>
+                <li><b>Front-end:</b> React.js, Next.js, Tailwind CSS</li>
+                <li><b>Back-end:</b> Node.js, Express.js, Flask</li>
+                <li><b>ML Frameworks & Libraries:</b> PyTorch, TensorFlow, scikit-learn, NumPy, Pandas</li>
+                <li><b>Visualization & BI Tools:</b> Power BI, Matplotlib, Excel</li>
+                <li><b>Databases:</b> PostgreSQL, MySQL, MongoDB, DynamoDB</li>
+                <li><b>Dev Tools:</b> Git, GitHub, Bash, Docker, Kubernetes, AWS, Linux, VSCode</li>
               </ul>
             </div>
           </div>
